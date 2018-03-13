@@ -1,0 +1,187 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+#d1{
+	width: 100%;
+	height: 50px;
+	background-color: black;
+	float: left;
+	color: maroon;
+	font-size: 25px;
+	font-family: arial;
+	padding-top: 7px;
+}
+#d1 span{
+	color: orange;
+	font-style: italic;
+}
+#d2{
+	width: 100%;
+	height: 600px;
+	float: left;
+	background-image: url('nhahang.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+}
+#d21{
+	width: 30%;
+	float: left;
+	height: 100%;
+}
+#d21a{
+	width: 200px;
+	height: 150px;
+	float: left;
+	margin-top: -20px;
+	margin-left: 50px;
+}
+#d21a img{
+	width: 100%;
+	height: 100%;
+}
+#d21b{
+	width: 200px;
+	height: 150px;
+	clear: both;
+	margin-left: 50px;
+	margin-bottom: 10px;
+
+}
+
+#d21 .menu li{
+	list-style-type: none;
+	color: orange;
+	font-family: sans-serif;
+	background-color: #000;
+	padding: 15px;
+	opacity: 0.7;
+	transition: all 0.1s;
+	border-radius: 5px;
+
+}
+.m{
+	margin-top: 5px;
+}
+#d21 .menu li a{
+	text-decoration: none;
+	color: orange;
+	transition: all 0.5s;
+	
+}
+#d21 .menu li:hover{
+	background-color: red;
+	opacity: 1;
+}
+#d21 .menu li a:hover{
+	font-size: 20px;
+	opacity: 1;
+	color: white;
+}
+#d21 .menu li:first-child{
+	margin-top: 100px;
+}
+.submenu{
+	width: 200px;
+	height: 0px;
+	position: absolute;
+	left: 250px;
+	top: 104px;
+	display: none;
+	
+}
+#d21 .menu li:first-child:hover .submenu{
+	display: block;
+	margin: 0;
+}
+#submenu li{
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+
+
+
+
+#d22{
+	
+	width: 70%;
+	height: 100%;
+	float: left;
+}
+#all{
+	width: 200px;
+	perspective: 1000px;
+	padding-top: 300px;
+	margin:auto;
+
+}
+#carrousel{
+	width: 100%;
+	position: absolute;
+	animation: rotar 10s infinite linear;
+	transform-style: preserve-3d;
+
+}
+.item{
+	width: 100%;
+	height: 120px;
+	position: absolute;
+	overflow: hidden;
+	box-shadow: 5px 5px 5px black;
+}
+#carrousel:hover{
+	animation-play-state: paused;
+
+}
+
+.item img{
+	width: 100%;
+	height: 100%;
+	transition: all 0.5s;
+}
+.item img:hover{
+	transform: scale(1.3);
+	cursor: pointer;
+}
+.a{
+	transform: rotateY(0deg) translateZ(300px);
+}
+.b{
+	transform: rotateY(40deg) translateZ(300px);
+}
+.c{
+	transform: rotateY(80deg) translateZ(300px);
+}
+.d{
+	transform: rotateY(120deg) translateZ(300px);
+}
+.e{
+	transform: rotateY(160deg) translateZ(300px);
+}
+.f{
+	transform: rotateY(200deg) translateZ(300px);
+}
+.g{
+	transform: rotateY(240deg) translateZ(300px);
+}
+.h{
+	transform: rotateY(280deg) translateZ(300px);
+}
+.i{
+	transform: rotateY(320deg) translateZ(300px);
+}
+.j{
+	transform: rotateY(360deg) translateZ(300px);
+}
+
+@keyframes rotar{
+	from{
+		transform: rotateY(0deg);
+	}
+	to{
+		transform: rotateY(360deg);
+	}
+}
